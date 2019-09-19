@@ -85,32 +85,32 @@ if __name__ == '__main__':
                                 if state_a==['close','close','close','close','close']:
                                     if index ==0:
                                         state_a[i[0]]='open'
-                                        #response4=urllib.request.urlopen(line_a1[i[0]])
-                                        #html4=response4.read()
-                                        #text4=json.loads(html4)
+                                        response4=urllib.request.urlopen(line_a1[i[0]])
+                                        html4=response4.read()
+                                        text4=json.loads(html4)
                                         print(line_a1[i[0]])
                                 elif state_a[i[0]]=='open':
                                     if index ==2:
                                         state_a[i[0]]='close'
-                                        #response5=urllib.request.urlopen(line_a0[i[0]])
-                                        #html5=response5.read()
-                                        #text5=json.loads(html5)
+                                        response5=urllib.request.urlopen(line_a0[i[0]])
+                                        html5=response5.read()
+                                        text5=json.loads(html5)
                                         print(line_a0[i[0]])
                         for v in B1:
                             if v[1]<=pos[0]<=v[1]+160 and v[2]<=pos[1]<=v[2]+160:
                                 if state_b==['close','close','close','close']:
                                     if index ==0:
                                         state_b[v[0]]='open'
-                                        #response6=urllib.request.urlopen(line_b1[v[0]])
-                                        #html6=response6.read()
-                                        #text6=json.loads(html6)
+                                        response6=urllib.request.urlopen(line_b1[v[0]])
+                                        html6=response6.read()
+                                        text6=json.loads(html6)
                                         print(line_b1[v[0]])
                                 elif state_b[v[0]]=='open':
                                     if index ==2:
                                         state_b[v[0]]='close'
-                                        #response7=urllib.request.urlopen(line_b0[v[0]])
-                                        #html7=response7.read()
-                                        #text7=json.loads(html7)
+                                        response7=urllib.request.urlopen(line_b0[v[0]])
+                                        html7=response7.read()
+                                        text7=json.loads(html7)
                                         print(line_b0[v[0]])
         response8=urllib.request.urlopen("http://localhost:5000/bucketgroup/a")
         html8=response8.read().decode()
