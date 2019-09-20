@@ -117,6 +117,7 @@ if __name__ == '__main__':
                                 html7=response3.read()
                                 text7=json.loads(html7)
                                 print(text7['status'])
+        time.sleep(1/3)
         response8=urllib.request.urlopen("http://localhost:5000/bucketgroup/a")
         html8=response8.read().decode()
         response9=urllib.request.urlopen("http://localhost:5000/bucketgroup/b")
@@ -139,4 +140,3 @@ if __name__ == '__main__':
         Bottles. WeightIcon(190,620,b'%0.2f' % text10['reading'])
         Bottles.VibratoryFeeder(930,450)
         Bottles. WeightIcon(930,620,b'%0.2f' % text11['reading'])
-        time.sleep(1/3)
