@@ -95,7 +95,7 @@ if __name__ == '__main__':
                                         #html3=response3.read()
                                         #text3=json.loads(html3)
                                         print(line_b0[v[0]])
-                        if 70<=pos[0]<=170 and 600<=pos[1]<=700:
+                        if 190<=pos[0]<=290 and 620<=pos[1]<=720:
                             if index == 0:
                                 response4=urllib.request.urlopen("http://localhost:5000/feederon/a")
                                 html4=response4.read()
@@ -106,7 +106,7 @@ if __name__ == '__main__':
                                 html5=response5.read()
                                 text5=json.loads(html5)
                                 print(text5['status'])
-                        elif 790<=pos[0]<=890 and 600<=pos[1]<=700:
+                        elif 930<=pos[0]<=1030 and 620<=pos[1]<=720:
                             if index == 0:
                                 response6=urllib.request.urlopen("http://localhost:5000/feederon/b")
                                 html6=response6.read()
