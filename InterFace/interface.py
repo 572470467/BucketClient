@@ -39,6 +39,8 @@ if __name__ == '__main__':
         pygame.draw.rect(screen,White,[506,520,85,28],0)
         pygame.draw.rect(screen,Brack,[597,520,65,28],2)
         pygame.draw.rect(screen,Green,[599,522,62,25],0)
+        button1=text_1.render("切 换",1,Brack)
+        screen.blit(button1,(611,524))
         button=text_1.render(button_text0,1,Brack)
         screen.blit(button,(506,524))
         B=[[0,647,260,button_text[0],color[0]],[1,647,310,button_text[1],color[1]],[2,647,360,button_text[2],color[2]],[3,647,410,button_text[3],color[3]],[4,647,460,button_text[4],color[4]]]
